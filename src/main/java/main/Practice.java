@@ -17,18 +17,18 @@ public class Practice {
 
     /**
      * 1. feladat - 2p
-     *
+     * <p>
      * A különböző osztályú űrhajókat a csatákra úgy készítik fel, hogy pajzzsal látják el őket.
-     *
+     * <p>
      * Az űrhajó-osztályok és a pajzsuk ereje:
-     *      Intrepid: 100
-     *      Nova: 200
-     *      Raven: 300
-     *      Galaxy: 500
-     *      Dreadnought: 800
-     *
+     * Intrepid: 100
+     * Nova: 200
+     * Raven: 300
+     * Galaxy: 500
+     * Dreadnought: 800
+     * <p>
      * Más osztályú űrhajók nem kapnak pajzsot.
-     *
+     * <p>
      * Valósítsd meg a "getShieldPower" nevű metódust!
      * A metódus adja vissza, hogy az adott osztályú űrhajó milyen erős pajzzsal rendelkezik.
      *
@@ -55,15 +55,15 @@ public class Practice {
 
     /**
      * 2. feladat - 2p
-     *
+     * <p>
      * A Bolygóközi Köztársaság katonai akadémiáján a túlélési gyakorlaton elvárt szintet úgy határozzák meg,
      * hogy az előző évi első és utolsó próbálkozó eredményét átlagolják.
      * (Nem a legkisebbet és a legnagyobbat, hanem sorrendben az elsőt és a legutolsót!)
-     *
+     * <p>
      * Valósítsd meg a "countRequirement" nevű metódust!
      * A metódus bemeneti paraméterként kapja az előző évi eredményeket (sorrendben),
      * és visszaadja az első és az utolsó eredmény átlagát.
-     *
+     * <p>
      * (Biztos lehetsz benne, hogy a bemeneti paraméterként kapott tömb legalább 2 elemet tartalmaz.)
      *
      * @param scores az előző évi eredmények
@@ -76,13 +76,13 @@ public class Practice {
 
     /**
      * 3. feladat - 3p
-     *
+     * <p>
      * Az űrhajók harcképességét mindig felmérik, mielőtt csatába indulnak velük.
      * Egy hajót akkor minősítenek harcképesnek, ha az alábbi feltételek mind teljesülnek:
-     *      a pajzs töltöttsége meghaladja a 20 egységet
-     *      a fegyverzet töltöttsége meghaladja a 20 egységet
-     *      a pajzs és fegyverzet töltöttsége átlagosan meghaladja az 50 egységet
-     *
+     * a pajzs töltöttsége meghaladja a 20 egységet
+     * a fegyverzet töltöttsége meghaladja a 20 egységet
+     * a pajzs és fegyverzet töltöttsége átlagosan meghaladja az 50 egységet
+     * <p>
      * Valósítsd meg az "isShipAbleToFight" nevű metódust!
      * A metódus bemeneti paraméterként kapja a pajzs és a fegyverzet töltöttségét,
      * és megállapítja, hogy a fenti feltételek mind teljesülnek-e vagy sem.
@@ -104,30 +104,30 @@ public class Practice {
 
     /**
      * 4. feladat - 3p
-     *
+     * <p>
      * Noha a hadviselésnek vannak szabályai, egy titkos gyarmati különítmény úgy döntött, hogy beveti a legveszedelmesebb
      * fegyvert, amelynek használatát az egész Univerzumban régen betiltottak már: a vérengző űrnyulakat.
      * Ezért megbíztak egy tenyésztőt, hogy szaporítson adott számú űrnyulat.
      * A megrendeléskor kérdezték a tenyésztőt, hogy hány napig kell várniuk a szállítmány teljesítésére.
-     *
+     * <p>
      * A tenyésztő tudta, hogy az űrnyulak szaporák, és a populációjuk naponta megduplázódik. Azonban a pontos számítással
      * problémái akadtak.
-     *
+     * <p>
      * Segíts a tenyésztőnek kiszámítani, hogy hány nap alatt tudja kitenyészteni a kívánt mennyiséget,
      * ha az űrnyulak száma naponta megduplázódik!
-     *
+     * <p>
      * Valósítsd meg a "getSpaceRabbitDays" nevű metódust!
      * A metódus bemeneti paraméterként kapja, hogy hány űrnyúllal kezdi a tenyésztő a szaporítást,
      * valamint hogy a megrendelők hány nyulat rendeltek.
      * A metódus adja vissza, hogy hányadik napon tudja teljesíteni a tenyésztő a megrendelést!
-     *
+     * <p>
      * Ügyelj arra, hogy ha a tenyésztőnek már van annyi űrnyula, amennyit a megrendelő kért,
      * akkor is 1 nap a megrendelés teljesítésének időtartama.
-     *
+     * <p>
      * Biztos lehetsz benne, hogy a "startRabbitValue" értéke legalább 1.
      *
      * @param startRabbitValue az űrnyulak száma a tenyésztés megkezdésekor
-     * @param requiredRabbits a megrendelt űrnyulak száma
+     * @param requiredRabbits  a megrendelt űrnyulak száma
      * @return a megrendelés teljesítéséhez szükséges napok száma
      */
     public static int getSpaceRabbitDays(int startRabbitValue, int requiredRabbits) {
@@ -143,14 +143,14 @@ public class Practice {
 
     /**
      * 5. feladat - 3p
-     *
+     * <p>
      * A Gyarmatok Szövetségének hadvezetése összeírta, hogy bolygónként hány ember hajlandó harcba vonulni,
      * és szeretnék megtudni, hogy összesen mekkora seregük lesz így.
-     *
+     * <p>
      * Valósítsd meg a "sumArmy" nevű metódust!
      * A metódus bemeneti paraméterként kapja, hogy bolygónként hány ember csatlakozik a sereghez,
      * és összegzi az emberek számát.
-     *
+     * <p>
      * Biztos lehets benne, hogy az "armyOfPlanets" nevű tömb legalább egy elemet tartalmaz.
      *
      * @param armyOfPlanets a sereghez csatlakozó emberek számai
@@ -168,12 +168,12 @@ public class Practice {
 
     /**
      * 6. feladat - 3p
-     *
+     * <p>
      * A Bolygóközi Szövetség hadvezetése jegyzéket készít a csaták kimeneteléről az alábbiak szerint:
-     *      ha elveszítettek egy csatát, akkor azt negatív számmal jelölik
-     *      ha megnyertek egy csatát, akkor azt pozitív számmal jelölik
-     *      ha a csata döntetlen volt, akkor azt 0-val (nullával) jelölik
-     *
+     * ha elveszítettek egy csatát, akkor azt negatív számmal jelölik
+     * ha megnyertek egy csatát, akkor azt pozitív számmal jelölik
+     * ha a csata döntetlen volt, akkor azt 0-val (nullával) jelölik
+     * <p>
      * Valósítsd meg a "countVictories" nevű metódust!
      * A metódus bemeneti paraméterként kapja a csatákról készített jegyzéket,
      * és megszámolja, hogy hány csatát nyertek meg.
@@ -185,8 +185,8 @@ public class Practice {
 
         int victories = 0;
 
-        for (int victory : battles){
-            if (victory > 0){
+        for (int victory : battles) {
+            if (victory > 0) {
                 victories++;
             }
         }
@@ -195,13 +195,13 @@ public class Practice {
 
     /**
      * 7. feladat - 4p
-     *
+     * <p>
      * A Bolygóközi Köztársaság akadémiáján záróünnepséget tartanak a végzett katonák számára.
      * A díszszemlén a kadétok magasság szerint növekvő sorrendben állnak fel.
-     *
+     * <p>
      * Valósítsd meg az "isInAscendingOrder" nevű metódust!
      * A metódus ellenőrzi, hogy a kadétok valóban növekvő sorrendben állnak-e.
-     *
+     * <p>
      * Biztos lehetsz benne, hogy a "heights" nevű tömb legalább egy elemet tartalmaz.
      *
      * @param heights a kadétok magassága
@@ -220,20 +220,20 @@ public class Practice {
 
     /**
      * 8. feladat - 4p
-     *
+     * <p>
      * A Földi Hírszerzőközpont rejtélyes üzeneteket hallgat le.
      * Az üzenetek mindig érelmetlen karaktersorozatból állnak.
      * Az egyik kódfejtő azzal az ötlettel áll elő, hogy az üzeneteket
      * meg lehetne fejteni, ha megfordítják őket - azaz hátulról visszafelé olvassák el.
-     *
+     * <p>
      * Valósítsd meg a "reverseMessage" nevű metódust!
      * A metódus fordítsa meg az üzenet karaktereit: az eredeti üzenet utolsó karaktere
      * legyen az első, az utolsó előtti a második stb.
-     *
+     * <p>
      * Például:
-     *      eredeti üzenet: ['a', 'b', 'c', 'd', 'e']
-     *      megfordítva:    ['e', 'd', 'c', 'b', 'a']
-     *
+     * eredeti üzenet: ['a', 'b', 'c', 'd', 'e']
+     * megfordítva:    ['e', 'd', 'c', 'b', 'a']
+     * <p>
      * Ügyelj arra, hogy az eredeti üzenet ne módosuljon!
      *
      * @param message az eredeti karaktersorozat
@@ -253,27 +253,27 @@ public class Practice {
 
     /**
      * 9. feladat - 5p
-     *
+     * <p>
      * A Bolygóközi Szövetség hadvezetése összegyűjtötte az utóbbi néhány hónap összes csatáját, hónaponként rendszerezve.
      * Szeretnék tudni, hogy melyik hónapban volt a legtöbb veszteségűk.
-     *
+     * <p>
      * Valósítsd meg a "getWorstMonthIndex" nevű metódust!
      * A metódus bemeneti paraméterként egy kétdimenziós tömböt kap, amely tartalmazza az utóbbi hónapok csatáinak veszteségeit.
      * A kétdimenziós tömbön belül az egydimenziós tömbök egy-egy hónap adatait tárolják.
-     *
+     * <p>
      * A metódus számítsa ki, hogy mely hónapban volt a legtöbb veszteség,
      * és térjen vissza a hónap (azaz az egydimenziós tömb) index-számával!
-     *
+     * <p>
      * Például:
-     *      {
-     *          {1},        // 0. indexű hónap
-     *          {1, 2},     // 1. indexű hónap
-     *          {11},       // 2. indexű hónap
-     *          {3, 1, 4}   // 3. indexű hónap
-     *      }
-     *    megoldás: 2
-     *      mert abban a hónapban volt a legtöbb veszteség, amelynek adatait ezen az index-számon tárolják
-     *
+     * {
+     * {1},        // 0. indexű hónap
+     * {1, 2},     // 1. indexű hónap
+     * {11},       // 2. indexű hónap
+     * {3, 1, 4}   // 3. indexű hónap
+     * }
+     * megoldás: 2
+     * mert abban a hónapban volt a legtöbb veszteség, amelynek adatait ezen az index-számon tárolják
+     * <p>
      * Biztos lehetsz benne, hogy a hónapok veszteségei nem egyenlőek - tehát nem lehet holtverseny.
      *
      * @param lossesPerMonths a veszteségek hónaponként összegyűjtve
@@ -282,18 +282,21 @@ public class Practice {
     public static int getWorstMonthIndex(int[][] lossesPerMonths) {
 
         int[] sum = new int[lossesPerMonths.length];
-        int answer = 0;
+        int max = Integer.MIN_VALUE;
+        int index = 0;
 
-        for (int i = 0; i < lossesPerMonths.length - 1; i++) {
-            for (int j = 0; j < lossesPerMonths[i].length - 1; j++) {
+
+        for (int i = 0; i < lossesPerMonths.length; i++) {
+            for (int j = 0; j < lossesPerMonths[i].length; j++) {
                 sum[i] += lossesPerMonths[i][j];
-                if (sum[i] < sum[i + 1]) {
-                    answer++;
+                if (max < sum[i]) {
+                    max = sum[i];
+                    index = i;
                 }
             }
-        }
-        return answer;
-    }
+        } return index;
+}
+
 
     /**
      * 10. feladat - 5p
