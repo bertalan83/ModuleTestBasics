@@ -134,9 +134,11 @@ public class Practice {
 
         int counter = 1;
 
-        for (int i = startRabbitValue; i < requiredRabbits; ) {
-            counter++;
-            startRabbitValue = startRabbitValue * 2;
+        for (int i = startRabbitValue; i < requiredRabbits; i++) {
+            if (startRabbitValue < requiredRabbits) {
+                counter++;
+                startRabbitValue *= 2;
+            }
         }
         return counter;
     }
