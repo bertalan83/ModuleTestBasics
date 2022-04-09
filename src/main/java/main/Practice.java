@@ -157,7 +157,13 @@ public class Practice {
      * @return a teljes sereg száma
      */
     public static int sumArmy(int[] armyOfPlanets) {
-        return -1;
+
+        int sum = 0;
+
+        for (int i = 0; i < armyOfPlanets.length; i++) {
+            sum += armyOfPlanets[i];
+        }
+        return sum;
     }
 
     /**
