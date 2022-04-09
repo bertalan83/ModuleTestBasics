@@ -34,6 +34,9 @@ class Test_Bonus_WillTheyFight {
 
         willTheyFight = Practice.willTheyFight(0, 2, 1, 3);
         assertFalse(willTheyFight);
+
+        willTheyFight = Practice.willTheyFight(3, 3, 2, 5);
+        assertFalse(willTheyFight);
     }
 
 }

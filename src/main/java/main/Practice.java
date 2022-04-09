@@ -281,16 +281,18 @@ public class Practice {
      */
     public static int getWorstMonthIndex(int[][] lossesPerMonths) {
 
-        int worstOne = 0;
+        int[] sum = new int[lossesPerMonths.length];
+        int answer = 0;
 
         for (int i = 0; i < lossesPerMonths.length - 1; i++) {
             for (int j = 0; j < lossesPerMonths[i].length - 1; j++) {
-                if (lossesPerMonths[i][j] + lossesPerMonths[i][j + 1]
-                        > lossesPerMonths[i + 1][j] + lossesPerMonths[i + 1][j + 1])
-                    worstOne = i;
+                sum[i] += lossesPerMonths[i][j];
+                if (sum[i] < sum[i + 1]) {
+                    answer++;
+                }
             }
         }
-        return worstOne;
+        return answer;
     }
 
     /**
@@ -377,7 +379,15 @@ public class Practice {
      * @return fognak-e harcolni
      */
     public static boolean willTheyFight(int s1, int t1, int s2, int t2) {
-        return false;
+
+        boolean fight = false;
+
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            if (s1 == s2 || s1 + t1 * i == s2 + t2 * i) {
+                fight = true;
+            }
+        }
+        return fight;
     }
 
 }
