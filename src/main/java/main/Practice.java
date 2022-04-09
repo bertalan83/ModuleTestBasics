@@ -70,7 +70,8 @@ public class Practice {
      * @return az elvárt szint
      */
     public static double countRequirement(int[] scores) {
-        return 0.0;
+
+        return (double) (scores[0] + scores[scores.length - 1]) / 2;
     }
 
     /**
